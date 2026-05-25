@@ -98,7 +98,7 @@ I center the ages around **30 years old** and **std for 7 years** to keep the cu
         Created_At.append(fake.date_between(start_date=start_date, end_date=end_date))
 ```
 
-## Build Final Pandas DataFrame
+## Build Pandas DataFrame
 ```Python
     Customer_Data = pd.DataFrame({
         'Customer_ID': Customer_ID,
@@ -123,5 +123,5 @@ I center the ages around **30 years old** and **std for 7 years** to keep the cu
 
 ```Python
 synthetic_customer_data = create_synthetic_data(1000)
-synthetic_customer_data
+synthetic_customer_data.to_csv('synthetic_customer_data.csv', index=False)
 ```

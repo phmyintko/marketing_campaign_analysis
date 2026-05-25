@@ -11,10 +11,10 @@ This project simulates realistic synthetic customer data for analytics practice,
 
 ### Core Features
 * **Thai Demographic Profiles:** Localized names, phone formats `06`, `08`, `09`, and standard free email domains (Gmail, Yahoo, etc.).
-* **Targeted Regional Weights:** Favors major economic cities like `Central` (Bangkok) and `Northern` (Chiang Mai) regions.
-* **Realistic Age Curves:** Centers customer profiles around a bell curve of <mark>30 years old</mark> with a <mark>standard deviation of 7 years</mark>, bounded between <mark>ages 18 and 70</mark>.
-* **Database-Ready Prefixes:** All IDs are generated with distinct string prefixes like `CUST_` or `ORD_` so fields never get mixed up when building database schemas.
-* **Gender-Matched Alignment:** Names are conditionally checked against the generated gender profile `Faker.name_male()` vs `Faker.name_female()` to prevent unrealistic demographic mismatches.
+* **Regional Weights:** Favors major economic cities like `Central` (Bangkok) and `Northern` (Chiang Mai) regions.
+* **Age Curves:** Centers customer profiles around a bell curve of <mark>30 years old</mark> with a <mark>standard deviation of 7 years</mark>, bounded between <mark>ages 18 and 70</mark>.
+* **Prefixes:** Customer IDs are generated with distinct string prefixes like `CUST_` or `ORD_` so fields never get mixed up when building database schemas. 
+* **Gender:** Names are conditionally checked against the generated gender profile `Faker.name_male()` vs `Faker.name_female()` to prevent unrealistic demographic mismatches.
 
 ---
 

@@ -115,7 +115,6 @@ I center the ages around **30 years old** and **std for 7 years** to keep the cu
         'Status': Status,
         'Created_At': Created_At
     })
-
     return Customer_Data
 ```
 

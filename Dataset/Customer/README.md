@@ -1,209 +1,127 @@
 # Synthetic Customer Data Generator
 
-This project generates realistic synthetic customer data for analytics practice, SQL testing, dashboard development, and portfolio projects.
+This project generates realistic synthetic customer data for analytics practice, SQL testing, and portfolio projects.
 
-The dataset is designed to simulate a real-world customer database with:
-- Customer demographics
-- Contact information
-- Regional distributions
-- Birth dates
-- Customer status
-- Registration dates
+Features:
+- Thai-style customer profiles
+- Weighted regional distribution
+- Realistic age generation 
 
----
+from faker import Faker 
+import datetime
+import random
+import pandas as pd
 
-# Project Goal
 
-The purpose of this project is to create a reusable synthetic customer dataset that can be used for:
+## Create Synthetic Customer Dataset
 
-- SQL practice
-- Marketing analytics
-- Dashboard development
-- Exploratory Data Analysis (EDA)
-- Data cleaning practice
-- Future campaign simulation projects
+This function generates synthetic customer records using Faker and randomized probability distributions.
 
----
+>I fixed the randomness at **seed 92** like a permanent save point. This keeps long term simulation and realistic timeline. For example, if I later increase the dataset from 1,000 customers to 1,200, the original 1,000 customers will remain unchanged, and the code will simply generate 200 new customers at the end. This makes it realistic in building future analysis projects.
 
-# Features
+def create_synthetic_data(n_rows):
+    
+    fake = Faker('en_TH')
+    random.seed(92)
+    fake.seed_instance(92)
 
-- Thai-style fake customer profiles using Faker
-- Unique customer identifiers with prefixes
-- Realistic phone number generation
-- Weighted regional distributions
-- Age generation using Gaussian distribution
-- Reproducible synthetic data using fixed random seeds
-- Exportable CSV dataset
+    Customer_ID = []
+    Customer_Name = []
+    Email = []
+    Phone = []
+    Address = []
+    Distinct = []
+    City = []
+    Postal = []
+    Region = []
+    Date_of_Birth = []
+    Gender = []
+    Status = []
+    Created_At = []
 
----
 
-# Technologies Used
+## Generate Customer Records
 
-- Python
-- Pandas
-- Faker
-- Random
-- Datetime
-- Jupyter Notebook
+I add a prefix like `CUST_` for customers or `ord_` for orders so different IDs never get mixed up when connecting tables.
 
----
+    for i in range(n_rows):
 
-# Dataset Columns
+        prefix_ID = "CUST_"
+        Customer_ID.append(prefix_ID + fake.uuid4()[:4])
 
-| Column Name | Description |
-|---|---|
-| Customer_ID | Unique customer identifier |
-| Customer_Name | Generated customer full name |
-| Email | Fake email address |
-| Phone | Simulated Thai mobile phone number |
-| Address | Generated street address |
-| Distinct | Generated district/city |
-| City | Generated city |
-| Postal | Postal code |
-| Region | Customer region |
-| Date_of_Birth | Customer birth date |
-| Gender | Male / Female / Other |
-| Status | Marital status |
-| Created_At | Customer registration date |
 
----
+To keep the data looking realistic, `Customer_Names` are decided by `Gender`. The code looks at the generated gender first: if it’s `Male`, it picks a male name; if it’s `Female`, it picks a female name. This guarantees the names and genders always match up correctly.
 
-# Synthetic Data Logic
+        selected_gender = random.choice(['Male', 'Female', 'Other'])
+        Gender.append(selected_gender)
+        if selected_gender == 'Male':
+            Customer_Name.append(fake.name_male())
+        elif selected_gender == 'Female':
+            Customer_Name.append(fake.name_female())
+        else:
+            Customer_Name.append(fake.name())
 
-## Customer IDs
 
-Customer IDs use prefixes like `CUST_` so identifiers remain readable and organized.
+I force the phone numbers to start with `06`, `08`, or `09` so they look like actual Thai mobile numbers.
 
-Example:
+        Email.append(fake.unique.free_email())
 
-```python
-CUST_a3f9
-```
+        prefix_phone = random.choice(['06', '08', '09'])
+        phone = fake.unique.numerify(prefix_phone + '-####-####')
+        Phone.append(phone)
 
----
 
-## Reproducible Dataset Generation
+I set custom percentages for customer regions and weigh more for Central and Northern where `Bangkok` and `Chiang Mai` are located.
 
-The randomness is locked using seed `92` so the dataset always generates the exact same customer records every time the notebook runs.
+        Address.append(fake.street_address())
 
-This keeps the simulation stable and consistent for future projects.
+        Distinct.append(fake.city())
 
-For example:
-- if the dataset grows from 1,000 to 1,200 rows
-- the original 1,000 customers remain unchanged
-- only 200 new customers are added
+        City.append(fake.city())
 
-This allows future analytics projects to reuse the same customer base consistently.
+        Postal.append(fake.postcode())
 
----
+        Region.append(random.choices(['Northern', 'Northeast', 'Southern', 'Eastern', 'Western', 'Central'], weights=[0.3, 0.15, 0.05, 0.05, 0.05, 0.4])[0])
 
-## Realistic Gender-Based Names
 
-Customer names are generated based on selected gender values to improve realism.
+I center the ages around **30 years old** and **std for 7 years** to keep the customer base realistic, then calculate the matching date of birth format.
 
----
+        random_age = int(random.gauss(30, 7))
+        random_age = max(18, min(random_age, 70))
+        birth_year = datetime.date.today().year - random_age
+        random_dob = datetime.date(birth_year, random.randint(1, 12), random.randint(1, 28))
+        Date_of_Birth.append(random_dob.strftime('%Y-%m-%d'))
 
-## Thai Mobile Number Simulation
+        Status.append(random.choice(['Single', 'Married', 'Divorced', 'Widowed', 'Other']))
 
-Phone numbers are forced to start with:
-- `06`
-- `08`
-- `09`
+        start_date = datetime.date(2025, 1, 1)
+        end_date = datetime.date.today()
+        Created_At.append(fake.date_between(start_date=start_date, end_date=end_date))
 
-to better simulate real Thai mobile phone formats.
 
----
+## Build Final Pandas DataFrame
 
-## Regional Distribution Weighting
-
-Weighted probabilities are used instead of uniform random sampling to create more realistic regional concentration patterns.
-
-Higher customer concentrations are assigned to:
-- Central region
-- Northern region
-
-to reflect larger population and business activity areas.
-
----
-
-## Realistic Age Distribution
-
-A Gaussian distribution is used to center customer ages around 30 years old while restricting unrealistic values.
-
-```python
-random.gauss(30, 7)
-```
-
-This creates a more natural age spread for analytics simulations.
-
----
-
-# Example Output
-
-| Customer_ID | Customer_Name | Region | Gender |
-|---|---|---|---|
-| CUST_a1b2 | Somchai Prasert | Central | Male |
-| CUST_f9k3 | Nisa Wongchai | Northern | Female |
-
----
-
-# How to Run
-
-## Install dependencies
-
-```bash
-pip install faker pandas
-```
-
----
-
-## Run notebook
-
-Open the notebook:
-
-```bash
-jupyter notebook
-```
-
-Run all cells:
-
-```text
-Kernel → Restart & Run All
-```
-
----
-
-# File Structure
-
-```text
-marketing-campaign-analysis/
-│
-├── Dataset/
-│   └── Customer/
-│       ├── Cust_data_population.ipynb
-│       ├── Data_Population.py
-│       └── synthetic_customer_data.csv
-│
-├── README.md
-└── requirements.txt
-```
-
----
-
-# Future Improvements
-
-Planned future expansions:
-
-- Customer transaction tables
-- Marketing campaign simulations
-- Customer segmentation
-- RFM analysis
-- Dashboard visualization
-- SQL schema modeling
-- Cohort analysis datasets
-
----
-
-# Author
-
-Built as part of a marketing and data analytics portfolio project.
+    Customer_Data = pd.DataFrame({
+        'Customer_ID': Customer_ID,
+        'Customer_Name': Customer_Name,
+        'Email': Email,
+        'Phone': Phone,
+        'Address': Address,
+        'Distinct': Distinct,
+        'City': City,
+        'Postal': Postal,
+        'Region': Region,
+        'Date_of_Birth': Date_of_Birth,
+        'Gender': Gender,
+        'Status': Status,
+        'Created_At': Created_At
+    })
+
+    return Customer_Data
+
+
+## Generate Dataset
+
+synthetic_customer_data = create_synthetic_data(1000)
+
+synthetic_customer_data

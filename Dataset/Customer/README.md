@@ -7,6 +7,7 @@ Features:
 - Weighted regional distribution
 - Realistic age generation 
 
+```Python
 from faker import Faker 
 import datetime
 import random
@@ -19,6 +20,7 @@ This function generates synthetic customer records using Faker and randomized pr
 
 >I fixed the randomness at **seed 92** like a permanent save point. This keeps long term simulation and realistic timeline. For example, if I later increase the dataset from 1,000 customers to 1,200, the original 1,000 customers will remain unchanged, and the code will simply generate 200 new customers at the end. This makes it realistic in building future analysis projects.
 
+```Python
 def create_synthetic_data(n_rows):
     
     fake = Faker('en_TH')
@@ -44,6 +46,7 @@ def create_synthetic_data(n_rows):
 
 I add a prefix like `CUST_` for customers or `ord_` for orders so different IDs never get mixed up when connecting tables.
 
+```Python
     for i in range(n_rows):
 
         prefix_ID = "CUST_"
@@ -52,6 +55,7 @@ I add a prefix like `CUST_` for customers or `ord_` for orders so different IDs 
 
 To keep the data looking realistic, `Customer_Names` are decided by `Gender`. The code looks at the generated gender first: if it’s `Male`, it picks a male name; if it’s `Female`, it picks a female name. This guarantees the names and genders always match up correctly.
 
+```Python
         selected_gender = random.choice(['Male', 'Female', 'Other'])
         Gender.append(selected_gender)
         if selected_gender == 'Male':
@@ -64,6 +68,7 @@ To keep the data looking realistic, `Customer_Names` are decided by `Gender`. Th
 
 I force the phone numbers to start with `06`, `08`, or `09` so they look like actual Thai mobile numbers.
 
+```Python
         Email.append(fake.unique.free_email())
 
         prefix_phone = random.choice(['06', '08', '09'])
@@ -73,6 +78,7 @@ I force the phone numbers to start with `06`, `08`, or `09` so they look like ac
 
 I set custom percentages for customer regions and weigh more for Central and Northern where `Bangkok` and `Chiang Mai` are located.
 
+```Python
         Address.append(fake.street_address())
 
         Distinct.append(fake.city())
@@ -86,6 +92,7 @@ I set custom percentages for customer regions and weigh more for Central and Nor
 
 I center the ages around **30 years old** and **std for 7 years** to keep the customer base realistic, then calculate the matching date of birth format.
 
+```Python
         random_age = int(random.gauss(30, 7))
         random_age = max(18, min(random_age, 70))
         birth_year = datetime.date.today().year - random_age
@@ -101,6 +108,7 @@ I center the ages around **30 years old** and **std for 7 years** to keep the cu
 
 ## Build Final Pandas DataFrame
 
+```Python
     Customer_Data = pd.DataFrame({
         'Customer_ID': Customer_ID,
         'Customer_Name': Customer_Name,
@@ -122,6 +130,7 @@ I center the ages around **30 years old** and **std for 7 years** to keep the cu
 
 ## Generate Dataset
 
+```Python
 synthetic_customer_data = create_synthetic_data(1000)
 
 synthetic_customer_data

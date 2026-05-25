@@ -3,7 +3,7 @@
 This project generates realistic synthetic customer data for analytics practice, SQL testing, and portfolio projects.
 
 Features:
-- Thai-style customer profiles
+- Thai demographic customer profiles
 - Weighted regional distribution
 - Realistic age generation 
 
@@ -11,7 +11,7 @@ Features:
 
 This function generates synthetic customer records using Faker and randomized probability distributions.
 
->I fixed the randomness at **seed 92** like a permanent save point. This keeps long term simulation and realistic timeline. For example, if I later increase the dataset from 1,000 customers to 1,200, the original 1,000 customers will remain unchanged, and the code will simply generate 200 new customers at the end. This makes it realistic in building future analysis projects.
+>I fixed the randomness at **seed 92** like a permanent save point so the dataset stays consistent over time and evolves realistically in future projects.
 ```Python
 from faker import Faker 
 import datetime

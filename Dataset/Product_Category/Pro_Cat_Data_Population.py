@@ -1,5 +1,6 @@
 from faker import Faker
 import pandas as pd
+import random
 import datetime
 
 def create_synthetic_data():
@@ -36,4 +37,4 @@ def create_synthetic_data():
     return Product_Category
 
 synthetic_product_category_data = create_synthetic_data()
-synthetic_product_category_data.to_csv('Synthetic_Product_Category_Data.csv', index=False)
+synthetic_product_category_data

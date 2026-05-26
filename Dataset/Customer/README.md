@@ -5,7 +5,7 @@ This project simulates realistic synthetic customer data for analytics practice,
 
 ## Long-Term Simulation
 
-> 💡 The randomness is locked at **seed 92** like a permanent save point. If I later increase the dataset from 1,000 customers to 1,200 for a future project, the original 1,000 customers stay completely identical, and the simulation simply adds 200 brand-new customers to the end of the list. So the dataset stays consistent over time and evolves realistically in future projects.
+> 💡 The randomness is locked at **seed 92**, creating a permanent save point that keeps IDs and relationships consistent for ERDs, joins, and relational databases. If the dataset grows from 1,000 to 1,200 customers, the original 1,000 remain identical while 200 new customers are appended, allowing the dataset to evolve consistently over time.
 
 ---
 

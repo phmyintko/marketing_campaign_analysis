@@ -20,11 +20,11 @@ def create_synthetic_data():
     Created_At = []
 
 
-    for _ in Category_Name:
+    for name in Category_Name:
         prefix_ID = "ProCat_"
         Category_ID.append(prefix_ID + fake.uuid4()[:4])
 
-        if Category_Name == 'Mattress' or Category_Name == 'Bedsheet':
+        if name == 'Mattress' or name == 'Bedsheet':
             Created_At.append(datetime.date(2025, 1, 1))
         else:
             Created_At.append(datetime.date(2025, 4, 1))
@@ -37,4 +37,4 @@ def create_synthetic_data():
     return Product_Category
 
 synthetic_product_category_data = create_synthetic_data()
-synthetic_product_category_data
+synthetic_product_category_data.to_csv('Synthetic_Product_Category_Data.csv', index=False)

@@ -1,10 +1,8 @@
 # Synthetic Customer Data
-
 This project simulates realistic synthetic customer data for analytics practice, SQL testing, and marketing portfolio projects.
 
 
 ## Long-Term Simulation
-
 > 💡 The randomness is locked at **seed 92**, creating a permanent save point that keeps IDs and relationships consistent for ERDs, joins, and relational databases. If the dataset grows from 1,000 to 1,200 customers, the original 1,000 remain identical while 200 new customers are appended, allowing the dataset to evolve consistently over time.
 
 ---
@@ -19,5 +17,4 @@ This project simulates realistic synthetic customer data for analytics practice,
 ---
 
 ### Limitations & Future Scope
-
 * **Geographic:** For processing efficiency and scoping purposes, information like `Address`, `Distinct`, `City`, and `Postal` are currently generated independently. In future projects, I may integrate a relational Thai geography database or look-up table to ensure districts, cities, and postal codes map to each other with 100% real-world accuracy. 

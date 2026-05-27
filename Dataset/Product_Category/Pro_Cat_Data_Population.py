@@ -21,7 +21,7 @@ def create_synthetic_data():
 
 
     for name in Category_Name:
-        prefix_ID = "ProCat_"
+        prefix_ID = "PROCAT_"
         Category_ID.append(prefix_ID + fake.uuid4()[:4])
 
         if name == 'Mattress' or name == 'Bedsheet':

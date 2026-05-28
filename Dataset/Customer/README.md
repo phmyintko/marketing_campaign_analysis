@@ -1,18 +1,19 @@
-# Synthetic Customer Data
+# Synthetic Data
 This project simulates realistic synthetic customer data for analytics practice, SQL testing, and marketing portfolio projects.
 
-
 ## Long-Term Simulation
-> 💡 The randomness is locked at **seed 92**, creating a permanent save point that keeps IDs and relationships consistent for ERDs, joins, and relational databases. If the dataset grows from 1,000 to 1,200 customers, the original 1,000 remain identical while 200 new customers are appended, allowing the dataset to evolve consistently over time.
+> 💡 The randomness is locked at **seed 92**, creating a permanent save point that keeps IDs and relationships consistent for ERDs, joins, and relational databases. This ensures that the dataset to evolve consistently over time.
 
 ---
 
 ### Core Features
+* **Customer Acquisition Logic:** customer acquisition momentum is simulated by Thailand's GDP path 2021 to 2026.
 * **Thai Demographic Profiles:** Localized names, phone formats `06`, `08`, `09`, and standard free email domains (Gmail, Yahoo, etc.).
 * **Regional Weights:** Favors major economic cities like `Central` (Bangkok) and `Northern` (Chiang Mai) regions.
 * **Age Curves:** Centers customer profiles around a bell curve of <mark>30 years old</mark> with a <mark>standard deviation of 7 years</mark>, bounded between <mark>ages 18 and 70</mark>.
-* **Prefixes:** Customer IDs are generated with distinct string prefixes like `CUST_` or `ORD_` so fields never get mixed up when building database schemas. 
+* **Prefixes:** Customer ID uses a short 4-character UUID with the `CUST_` prefix to keep records organized and easy to connect across tables.
 * **Gender:** Names are conditionally checked against the generated gender profile `Faker.name_male()` vs `Faker.name_female()` to prevent unrealistic demographic mismatches.
+* **SignUp Logic:** To simulate customer acquisition momentum, the `Created_At` dates are generated based on Thailand's GDP path from 2021 to 2026. The code randomly selects a year for each customer according to the specified weights, and then generates a random date within that year. For 2026, the date range is limited to January 1st to May 28th to reflect the current date and maintain data realism.
 
 ---
 

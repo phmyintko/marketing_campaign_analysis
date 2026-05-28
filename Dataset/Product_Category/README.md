@@ -1,4 +1,4 @@
-# Synthetic Product Category Data
+# Synthetic Data
 This project simulates realistic synthetic product category data for analytics practice, SQL testing, and marketing portfolio projects.
 
 ## Long-Term Simulation
@@ -8,7 +8,7 @@ This project simulates realistic synthetic product category data for analytics p
 
 ### Core Features
 * **Category Organization:** Product categories are clearly separated across manufacturing branches, such as mattresses and bedding products.
-* **Prefixes:** Category IDs use the `ProCat_` prefix to keep records organized and easy to identify across tables.letting you know instantly which lookup tables are being pulled from during massive warehouse queries.
+* **Prefixes:** Category IDs use the `PROCAT_` prefix to keep records organized and easy to identify across tables.letting you know instantly which lookup tables are being pulled from during massive warehouse queries.
 
 ---
 

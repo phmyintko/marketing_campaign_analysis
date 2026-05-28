@@ -6,8 +6,10 @@ import datetime
 def create_synthetic_data():
 
     fake = Faker('en_TH')
-    random.seed(92)
-    fake.seed_instance(92)
+    # `seed 92` is initialized to guarantee deterministic record generation, ensuring permanent identifier consistency for entity-relationship diagrams (ERDs) and database joins.
+    SEED = 92
+    random.seed(SEED)
+    fake.seed_instance(SEED)
 
     Category_ID = []
     Category_Name = [
@@ -19,15 +21,16 @@ def create_synthetic_data():
     ]
     Created_At = []
 
-
     for name in Category_Name:
+        # Distinct entity prefixes are implemented to prevent identifier collision during table joins. 
         prefix_ID = "PROCAT_"
         Category_ID.append(prefix_ID + fake.uuid4()[:4])
 
-        if name == 'Mattress' or name == 'Bedsheet':
-            Created_At.append(datetime.date(2025, 1, 1))
+        # Simulated product-line expansion where Mattress and Bedsheet launch first, followed by Pillow, Bolster, and Blanket in later years.
+        if name in ['Mattress', 'Bedsheet']:
+            Created_At.append(datetime.date(2021, 1, 1))
         else:
-            Created_At.append(datetime.date(2025, 4, 1))
+            Created_At.append(datetime.date(2024, 1, 1))
 
     Product_Category = pd.DataFrame({
         'Category_ID': Category_ID,
@@ -37,4 +40,4 @@ def create_synthetic_data():
     return Product_Category
 
 synthetic_product_category_data = create_synthetic_data()
-synthetic_product_category_data.to_csv('Synthetic_Product_Category_Data.csv', index=False)
+synthetic_product_category_data.to_csv('Dataset/Product_Category/Product_Category_Data.csv', index=False)

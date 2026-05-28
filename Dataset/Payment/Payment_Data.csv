@@ -1,0 +1,5 @@
+Payment_ID,Payment_Method,Created_At
+PAY_8cd2,COD,2021-01-01
+PAY_4414,Card,2021-01-01
+PAY_e09a,PromptPay,2021-01-01
+PAY_182e,TrueMoney,2022-01-01

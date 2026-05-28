@@ -1,4 +1,4 @@
-# Synthetic Manufacturer Data
+# Synthetic Data
 This project simulates realistic synthetic manufacturer data for analytics practice, SQL testing, and marketing portfolio projects.
 
 ## Long-Term Simulation
@@ -8,7 +8,7 @@ This project simulates realistic synthetic manufacturer data for analytics pract
 
 ### Core Features
 * **Geographic Mapping:** Manufacturers are assigned to realistic production regions, with mattress factory based in **Foshan** and bedding factory based in **Nantong**.
-* **Timeline Logic:** Manufacturer creation dates follow a structured timeline, with mattress manufacturers starting in January 2025 and bedding manufacturers starting in April 2025.
+* **Timeline Logic:** Manufacturer creation dates follow a structured timeline along with Product Category creation logic.
 * **Prefixes:** Manufacturer ID uses a short 4-character UUID with the `MFG_` prefix to keep records organized and easy to connect across tables.
 
 ---

@@ -7,5 +7,5 @@ This project simulates realistic synthetic channel data for analytics practice, 
 ---
 
 ### Core Features
-* **Prefixes:** Category IDs use the `OBJ_` prefix to keep records organized and easy to identify across tables.
-* **Evolution:** Simulates evolving real-world business objectives over time.
+* **Timeline Logic:** Tiktok marketplace was launched in Thailand in June 2022.
+* **Prefixes:** Channel ID uses a short 4-character UUID with the `CH_` prefix to keep records organized and easy to connect across tables.

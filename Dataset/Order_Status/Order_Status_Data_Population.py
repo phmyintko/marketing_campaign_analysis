@@ -22,7 +22,7 @@ def create_synthetic_data():
         # Distinct entity prefixes are implemented to prevent identifier collision during table joins. 
         prefix_id = 'STAT_'
         # Shortened 4-character UUID format is utilized to ensure optimal readability of relational identifiers.
-        Status_ID.append(prefix_id + fake.uuid4()[:4])
+        Status_ID.append(prefix_id + fake.unique.uuid4()[:4])
 
     Order_Status = pd.DataFrame({
         'Status_ID': Status_ID,

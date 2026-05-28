@@ -25,7 +25,7 @@ def create_synthetic_data():
     for channel in Channel_Name:
         # Distinct entity prefixes are implemented to prevent identifier collision during table joins. 
         prefix_id = 'CH_'
-        Channel_ID.append(prefix_id + fake.uuid4()[:4])
+        Channel_ID.append(prefix_id + fake.unique.uuid4()[:4])
 
         if channel in ['Physical_Store', 'Facebook', 'Line', 'Shopee', 'Lazada']:
             Created_At.append(datetime.date(2021, 1, 1))

@@ -25,7 +25,7 @@ def create_synthetic_data():
         # Distinct entity prefixes are implemented to prevent identifier collision during table joins. 
         prefix_id = 'OBJ_'
         # Shortened 4-character UUID format is utilized to ensure optimal readability of relational identifiers.
-        Objective_ID.append(prefix_id + fake.uuid4()[:4])
+        Objective_ID.append(prefix_id + fake.unique.uuid4()[:4])
         # Simulates evolving real-world business objectives over time.
         if objective == 'Grow Customer Base':
             Created_At.append(datetime.date(2021, 1, 1))

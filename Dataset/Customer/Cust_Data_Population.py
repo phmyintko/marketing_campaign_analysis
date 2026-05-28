@@ -29,7 +29,7 @@ def create_synthetic_data(n_rows):
         
         # District entity prefixes are implemented to prevent identifier collision during table joins. 
         prefix_ID = "CUST_"
-        Customer_ID.append(prefix_ID + fake.uuid4()[:4])
+        Customer_ID.append(prefix_ID + fake.unique.uuid4()[:6])
 
         # To keep the data looking realistic, `Customer_Names` are decided by gender.
         selected_gender = random.choice(['Male', 'Female', 'Other'])

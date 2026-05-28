@@ -23,7 +23,7 @@ def create_synthetic_data():
         # Distinct entity prefixes are implemented to prevent identifier collision during table joins. 
         prefix_ID = 'PAY_'
         # Shortened 4-character UUID format is utilized to ensure optimal readability of relational identifiers.
-        Payment_ID.append(prefix_ID + fake.uuid4()[:4])
+        Payment_ID.append(prefix_ID + fake.unique.uuid4()[:4])
         # Payment methods use fixed dates to simulate realistic rollout timelines.
         if method in ['COD', 'Card', 'PromptPay']:
             Created_At.append(datetime.date(2021, 1, 1))

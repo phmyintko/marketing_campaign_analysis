@@ -24,7 +24,7 @@ def create_synthetic_data():
     for name in Category_Name:
         # Distinct entity prefixes are implemented to prevent identifier collision during table joins. 
         prefix_ID = "PROCAT_"
-        Category_ID.append(prefix_ID + fake.uuid4()[:4])
+        Category_ID.append(prefix_ID + fake.unique.uuid4()[:4])
 
         # Simulated product-line expansion where Mattress and Bedsheet launch first, followed by Pillow, Bolster, and Blanket in later years.
         if name in ['Mattress', 'Bedsheet']:

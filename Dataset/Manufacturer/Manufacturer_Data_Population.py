@@ -27,7 +27,7 @@ def create_synthetic_data():
         # Distinct entity prefixes are implemented to prevent identifier collision during table joins. 
         prefix_ID = 'MFG_'
         # Shortened 4-character UUID format is utilized to ensure optimal readability of relational identifiers.
-        Manufacturer_ID.append(prefix_ID + fake.uuid4()[:4])
+        Manufacturer_ID.append(prefix_ID + fake.unique.uuid4()[:4])
 
         # Location and creation dates use fixed dates to simulate realistic rollout timelines.
         if name == 'Foshan Mattress Co., Ltd.':

@@ -68,7 +68,7 @@ def create_synthetic_data(n_rows):
 
         Status.append(random.choice(['Single', 'Married', 'Divorced', 'Widowed', 'Other']))
 
-        # To simulate customer acquisition momentum, the `Created_At` dates are generated based on Thailand's GDP path from 2021 to 2026. 
+        # To simulate customer acquisition momentum, the `Created_At` dates are generated based on Thailand's GDP % changes from 2021 to 2026. 
         cus_acq = [
         2021,
         2022,
@@ -78,12 +78,12 @@ def create_synthetic_data(n_rows):
         2026 
         ] 
         cus_acq_weights = [
-        0.10, 
-        0.12,
-        0.23, 
-        0.28, 
+        0.12, 
+        0.2,
         0.17, 
-        0.10
+        0.22, 
+        0.18, 
+        0.11
         ]
         signup_year = random.choices(cus_acq, weights=cus_acq_weights)[0]
         # For 2026, the date range is limited to January 1st to May 28th to reflect the current date and maintain data realism.

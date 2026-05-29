@@ -13,7 +13,7 @@ This project simulates realistic synthetic customer data for analytics practice,
 * **Age Curves:** Centers customer profiles around a bell curve of <mark>30 years old</mark> with a <mark>standard deviation of 7 years</mark>, bounded between <mark>ages 18 and 70</mark>.
 * **Prefixes:** Customer ID uses a short 4-character UUID with the `CUST_` prefix to keep records organized and easy to connect across tables.
 * **Gender:** Names are conditionally checked against the generated gender profile `Faker.name_male()` vs `Faker.name_female()` to prevent unrealistic demographic mismatches.
-* **SignUp Logic:** To simulate customer acquisition momentum, the `Created_At` dates are generated based on Thailand's GDP path from 2021 to 2026. The code randomly selects a year for each customer according to the specified weights, and then generates a random date within that year. For 2026, the date range is limited to January 1st to May 28th to reflect the current date and maintain data realism.
+* **SignUp Logic:** To simulate customer acquisition momentum, the `Created_At` dates are generated based on **Thailand's GDP path from 2021 to 2026** via `worldometers.info`.
 
 ---
 

@@ -1,0 +1,66 @@
+Campaign_ID,Campaign_Name,Campaign_Type,Start_Date,End_Date,Budget,Target_Audience,Region,Status,Created_At
+CMP_8cd272e0-909e-4060-8425-07646bc9947a,New Year Bedroom Refresh,Percentage Discount,2021-12-24,2022-01-17,49000,All Customers,Nation Wide,Completed,2021-12-01
+CMP_4414ca7c-96be-41c3-8abf-5f788ee24acb,Valentine Bedding Bundle,Buy One Get One,2021-01-24,2021-02-17,33000,Couples,Nation Wide,Completed,2021-01-01
+CMP_e09a37d7-f785-4c88-8dc0-0154cd00057b,Summer Mattress Sale,Percentage Discount,2021-02-24,2021-03-17,33000,Families,Nation Wide,Completed,2021-02-01
+CMP_182efaac-cf0d-4b57-8320-8fadac30337b,Happy Songkran,Free Shipping,2021-03-24,2021-04-17,33000,All Customers,Nation Wide,Completed,2021-03-01
+CMP_28ad5da1-78b4-4cbd-85cd-a50a91fd87f0,Mid-Year Mega Discount,Voucher Code,2021-04-24,2021-05-17,33000,Budget Shoppers,Nation Wide,Completed,2021-04-01
+CMP_13fac390-fef6-4507-9487-3d53d69cdc90,Free Shipping Month,Free Shipping,2021-05-24,2021-06-17,66000,Existing Customers,Nation Wide,Completed,2021-05-01
+CMP_56a3be19-a18b-4f33-aafd-36339294bf53,Rainy Season Bedding Deals,Voucher Code,2021-06-24,2021-07-17,66000,Existing Customers,Nation Wide,Completed,2021-06-01
+CMP_06ac42b9-dcb1-490c-8b23-51f30fe938ef,Sleep Better Campaign,Voucher Code,2021-07-24,2021-08-17,66000,All Customers,Nation Wide,Completed,2021-07-01
+CMP_ccc4567d-a235-40fb-a2b7-edb9a44ca1ff,Back to School Home Essentials,Fixed Discount,2021-08-24,2021-09-17,66000,Students,Nation Wide,Completed,2021-08-01
+CMP_28cec512-94d0-4f4a-9cd5-f0882a3a1820,10.10 Flash Sale,Limited Time Offer,2021-09-24,2021-10-17,49000,Budget Shoppers,Nation Wide,Completed,2021-09-01
+CMP_ba3ae8a2-2822-42f0-9d6a-a5ed9b1ee036,11.11 Mega Sale,Percentage Discount,2021-10-24,2021-11-17,49000,All Customers,Nation Wide,Completed,2021-10-01
+CMP_acd024c0-be5a-4728-bb98-da00695b808e,Holiday Bundle Promotion,Buy One Get One,2021-11-24,2021-12-17,49000,New Homeowners,Nation Wide,Completed,2021-11-01
+CMP_1e64a487-b687-44da-aa6b-556fc7b41dde,New Year Bedroom Refresh,Percentage Discount,2022-12-24,2023-01-17,49000,All Customers,Nation Wide,Completed,2022-12-01
+CMP_27a04800-f37b-4c5a-9dd4-d99dac80729b,Valentine Bedding Bundle,Buy One Get One,2022-01-24,2022-02-17,33000,Couples,Nation Wide,Completed,2022-01-01
+CMP_6ee75b1e-1178-4e38-b686-bd28ca80fae5,Summer Mattress Sale,Percentage Discount,2022-02-24,2022-03-17,33000,Families,Nation Wide,Completed,2022-02-01
+CMP_45de4bf8-0900-4b1f-a945-b5415cc3f97d,Happy Songkran,Free Shipping,2022-03-24,2022-04-17,33000,All Customers,Nation Wide,Completed,2022-03-01
+CMP_2df5c552-b05a-4ccb-aa05-1f5fe88049a9,Mid-Year Mega Discount,Voucher Code,2022-04-24,2022-05-17,33000,Budget Shoppers,Nation Wide,Completed,2022-04-01
+CMP_f6cbaf6d-2def-4c04-9821-b2ef3837fd39,Free Shipping Month,Free Shipping,2022-05-24,2022-06-17,66000,Existing Customers,Nation Wide,Completed,2022-05-01
+CMP_2449e4a8-9bb0-4bbb-9f86-62293a4718d7,Rainy Season Bedding Deals,Voucher Code,2022-06-24,2022-07-17,66000,Existing Customers,Nation Wide,Completed,2022-06-01
+CMP_6141faab-01bd-4e02-8862-534c7b24897f,Sleep Better Campaign,Voucher Code,2022-07-24,2022-08-17,66000,All Customers,Nation Wide,Completed,2022-07-01
+CMP_4a29a251-495a-4724-9e1c-07dfa74224c7,Back to School Home Essentials,Fixed Discount,2022-08-24,2022-09-17,66000,Students,Nation Wide,Completed,2022-08-01
+CMP_c645e850-ff9f-4fbd-a9bc-c96d497f0599,10.10 Flash Sale,Limited Time Offer,2022-09-24,2022-10-17,49000,Budget Shoppers,Nation Wide,Completed,2022-09-01
+CMP_d278948a-e037-4b8c-995d-63a7e75ca25b,11.11 Mega Sale,Percentage Discount,2022-10-24,2022-11-17,49000,All Customers,Nation Wide,Completed,2022-10-01
+CMP_87ca8fd0-91c4-4afe-a6f5-d812e38e9c35,Holiday Bundle Promotion,Buy One Get One,2022-11-24,2022-12-17,49000,New Homeowners,Nation Wide,Completed,2022-11-01
+CMP_23973884-6078-4964-9825-0aaf0e4b03a1,New Year Bedroom Refresh,Percentage Discount,2023-12-24,2024-01-17,49000,All Customers,Nation Wide,Completed,2023-12-01
+CMP_4e8b8809-ee3c-4c69-9a04-a65f9b8a3f86,Valentine Bedding Bundle,Buy One Get One,2023-01-24,2023-02-17,33000,Couples,Nation Wide,Completed,2023-01-01
+CMP_17f531cf-129c-4abd-b4c7-b11053a1bc88,Summer Mattress Sale,Percentage Discount,2023-02-24,2023-03-17,33000,Families,Nation Wide,Completed,2023-02-01
+CMP_e8c93f0c-b776-426c-8cee-f664f45eb3f2,Happy Songkran,Free Shipping,2023-03-24,2023-04-17,33000,All Customers,Nation Wide,Completed,2023-03-01
+CMP_2724972a-7d59-484e-bec3-edced6c94487,Mid-Year Mega Discount,Voucher Code,2023-04-24,2023-05-17,33000,Budget Shoppers,Nation Wide,Completed,2023-04-01
+CMP_e207fb5c-51ea-4f29-ba1a-5ab84bffe7d1,Free Shipping Month,Free Shipping,2023-05-24,2023-06-17,66000,Existing Customers,Nation Wide,Completed,2023-05-01
+CMP_3807e480-5df0-4383-8041-b6f9239de088,Rainy Season Bedding Deals,Voucher Code,2023-06-24,2023-07-17,66000,Existing Customers,Nation Wide,Completed,2023-06-01
+CMP_f4063608-f6a4-4c2b-8c18-1d838ffd6333,Sleep Better Campaign,Voucher Code,2023-07-24,2023-08-17,66000,All Customers,Nation Wide,Completed,2023-07-01
+CMP_d3de81f0-7c72-4111-988a-7f20f67da774,Back to School Home Essentials,Fixed Discount,2023-08-24,2023-09-17,66000,Students,Nation Wide,Completed,2023-08-01
+CMP_51449e66-f667-4ef5-af52-e42936f29cb7,10.10 Flash Sale,Limited Time Offer,2023-09-24,2023-10-17,49000,Budget Shoppers,Nation Wide,Completed,2023-09-01
+CMP_239e830b-12c4-4b99-8b93-5a7d02389e90,11.11 Mega Sale,Percentage Discount,2023-10-24,2023-11-17,49000,All Customers,Nation Wide,Completed,2023-10-01
+CMP_5ab8e4e6-99d9-453c-8c6a-b934ad40275b,Holiday Bundle Promotion,Buy One Get One,2023-11-24,2023-12-17,49000,New Homeowners,Nation Wide,Completed,2023-11-01
+CMP_18f87654-aeb2-4992-bc82-7db3fb91178e,New Year Bedroom Refresh,Percentage Discount,2024-12-24,2025-01-17,49000,All Customers,Nation Wide,Completed,2024-12-01
+CMP_2f243680-e1c2-4125-9707-9332cfcb2a53,Valentine Bedding Bundle,Buy One Get One,2024-01-24,2024-02-17,33000,Couples,Nation Wide,Completed,2024-01-01
+CMP_d846d9d8-e298-4264-b21a-bdc9f3f00e16,Summer Mattress Sale,Percentage Discount,2024-02-24,2024-03-17,33000,Families,Nation Wide,Completed,2024-02-01
+CMP_8a26e09f-a3e8-4276-95ee-13a581f55632,Happy Songkran,Free Shipping,2024-03-24,2024-04-17,33000,All Customers,Nation Wide,Completed,2024-03-01
+CMP_b097318b-064e-4e26-9a9e-2f82c4e9258d,Mid-Year Mega Discount,Voucher Code,2024-04-24,2024-05-17,33000,Budget Shoppers,Nation Wide,Completed,2024-04-01
+CMP_67d14a81-68b2-4af1-9a80-c8098652e61d,Free Shipping Month,Free Shipping,2024-05-24,2024-06-17,66000,Existing Customers,Nation Wide,Completed,2024-05-01
+CMP_aa0fd228-31bd-498c-8c79-4beec9b813fe,Rainy Season Bedding Deals,Voucher Code,2024-06-24,2024-07-17,66000,Existing Customers,Nation Wide,Completed,2024-06-01
+CMP_5d3da4b2-38f4-4641-a1b9-ceacd616be93,Sleep Better Campaign,Voucher Code,2024-07-24,2024-08-17,66000,All Customers,Nation Wide,Completed,2024-07-01
+CMP_f73236d8-8ce8-4914-aa38-f8c1761eb394,Back to School Home Essentials,Fixed Discount,2024-08-24,2024-09-17,66000,Students,Nation Wide,Completed,2024-08-01
+CMP_3481ae00-b8a3-42b1-abe8-73c24ff7939c,10.10 Flash Sale,Limited Time Offer,2024-09-24,2024-10-17,49000,Budget Shoppers,Nation Wide,Completed,2024-09-01
+CMP_f0781573-fde2-46ac-a427-1593cd826f97,11.11 Mega Sale,Percentage Discount,2024-10-24,2024-11-17,49000,All Customers,Nation Wide,Completed,2024-10-01
+CMP_b22a1463-ec5d-4571-bf94-6ffe68a1a3fc,Holiday Bundle Promotion,Buy One Get One,2024-11-24,2024-12-17,49000,New Homeowners,Nation Wide,Completed,2024-11-01
+CMP_8a5d1c4b-cc98-451a-a439-d86498f5a5d7,New Year Bedroom Refresh,Percentage Discount,2025-12-24,2026-01-17,49000,All Customers,Nation Wide,Completed,2025-12-01
+CMP_115c61c0-73d2-47c8-9574-7a112de64209,Valentine Bedding Bundle,Buy One Get One,2025-01-24,2025-02-17,33000,Couples,Nation Wide,Completed,2025-01-01
+CMP_56acd112-a311-445a-8b0a-3770c326d135,Summer Mattress Sale,Percentage Discount,2025-02-24,2025-03-17,33000,Families,Nation Wide,Completed,2025-02-01
+CMP_3076c13b-96e5-4858-93f3-eef42f6a8d8e,Happy Songkran,Free Shipping,2025-03-24,2025-04-17,33000,All Customers,Nation Wide,Completed,2025-03-01
+CMP_662f369a-d94a-42d7-85a6-9e32c4be2c7f,Mid-Year Mega Discount,Voucher Code,2025-04-24,2025-05-17,33000,Budget Shoppers,Nation Wide,Completed,2025-04-01
+CMP_a442d18b-176b-44fd-899b-723d09ba5858,Free Shipping Month,Free Shipping,2025-05-24,2025-06-17,66000,Existing Customers,Nation Wide,Completed,2025-05-01
+CMP_30508d0e-00e6-4560-a624-db3e4e734633,Rainy Season Bedding Deals,Voucher Code,2025-06-24,2025-07-17,66000,Existing Customers,Nation Wide,Completed,2025-06-01
+CMP_31e638c0-cf96-4202-b68e-bc74de6e3037,Sleep Better Campaign,Voucher Code,2025-07-24,2025-08-17,66000,All Customers,Nation Wide,Completed,2025-07-01
+CMP_21df41c6-8fc2-4089-b0ea-2a57c90a3dcd,Back to School Home Essentials,Fixed Discount,2025-08-24,2025-09-17,66000,Students,Nation Wide,Completed,2025-08-01
+CMP_98d4835f-763d-4475-a935-5f28513b6eff,10.10 Flash Sale,Limited Time Offer,2025-09-24,2025-10-17,49000,Budget Shoppers,Nation Wide,Completed,2025-09-01
+CMP_d1d699cd-d1d7-4cf7-ad2e-6dc211a55d13,11.11 Mega Sale,Percentage Discount,2025-10-24,2025-11-17,49000,All Customers,Nation Wide,Completed,2025-10-01
+CMP_b87f989b-bfc1-4323-af78-8fa334478825,Holiday Bundle Promotion,Buy One Get One,2025-11-24,2025-12-17,49000,New Homeowners,Nation Wide,Completed,2025-11-01
+CMP_f3ad3617-2867-44ae-b15a-5f2556261fca,Valentine Bedding Bundle,Buy One Get One,2026-01-24,2026-02-17,33000,Couples,Nation Wide,Completed,2026-01-01
+CMP_cfd70e82-4fe9-4a11-a470-0f7962024c48,Summer Mattress Sale,Percentage Discount,2026-02-24,2026-03-17,33000,Families,Nation Wide,Completed,2026-02-01
+CMP_82d771fc-09a3-441c-9de0-9fd1f0da6a60,Happy Songkran,Free Shipping,2026-03-24,2026-04-17,33000,All Customers,Nation Wide,Completed,2026-03-01
+CMP_9ebb6837-6c9f-4f9e-8cf8-8e705a58949d,Mid-Year Mega Discount,Voucher Code,2026-04-24,2026-05-17,33000,Budget Shoppers,Nation Wide,Completed,2026-04-01
+CMP_9781a84a-027f-43bc-8cdb-aa5c8286aec3,Free Shipping Month,Free Shipping,2026-05-24,2026-06-17,66000,Existing Customers,Nation Wide,Active,2026-05-01

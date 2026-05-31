@@ -178,4 +178,4 @@ def create_synthetic_data():
     return data
 
 Campaign_Data_Population = create_synthetic_data()
-Campaign_Data_Population.to_csv('Dataset/Campaign/Campaign_Data_Population.csv', index=False)
+Campaign_Data_Population.to_csv('Dataset/Campaign/Campaign_Data.csv', index=False)

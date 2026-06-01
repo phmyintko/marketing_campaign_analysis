@@ -3,7 +3,7 @@ import datetime
 import random
 import pandas as pd
 
-def create_synthetic_data(n_rows):
+def create_customer_data(n_rows):
     
     fake = Faker('en_TH')
     # seed 92 is initialized to guarantee deterministic record generation, ensuring permanent identifier consistency for entity-relationship diagrams (ERDs) and database joins.
@@ -111,5 +111,5 @@ def create_synthetic_data(n_rows):
     })
     return Customer_Data
 
-synthetic_customer_data = create_synthetic_data(5000)
+synthetic_customer_data = create_customer_data(5000)
 synthetic_customer_data.to_csv('Dataset/Customer/Customer_Data.csv', index=False)

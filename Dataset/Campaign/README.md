@@ -11,6 +11,3 @@ This project simulates realistic synthetic campaign data for analytics practice,
 * **Seasonality:** Campaign Budget allocations are strictly weighted by `2025` quarterly data spikes ($Q2 > Q4 > Q3 > Q1).
 * **Campaign Timeline:** Designed to cover Payday, local festivals and evnets. Moreover set a week gap between campaign to protect teams burn out.
 * **Time Travel Bug Fix:** Handled by adding +2 for year which start in December. 
-
-
-

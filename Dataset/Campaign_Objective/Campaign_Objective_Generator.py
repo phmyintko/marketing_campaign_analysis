@@ -48,6 +48,50 @@ def create_campaign_objective_bridge():
             objective_ids.append(obj_id)
 
     # Campaign → Objective Mapping
+def create_campaign_objective_bridge():
+
+    # Load datasets
+    campaign_df = pd.read_csv('../Campaign/Campaign_Data.csv')
+    objective_df = pd.read_csv('../Objective/Objective_Data.csv')
+
+    # Convert dates bec python see them as string
+    campaign_df['Created_At'] = pd.to_datetime(campaign_df['Created_At']).dt.date
+
+    objective_df['Created_At'] = pd.to_datetime(objective_df['Created_At']).dt.date
+
+    # Create dictionaries for quick lookups
+    obj_id_map = dict(
+        zip(
+            objective_df['Objective_Name'],
+            objective_df['Objective_ID'],
+        )
+    )
+    obj_date_map = dict(
+        zip(
+            objective_df['Objective_Name'],
+            objective_df['Created_At']
+        )
+    )
+
+    # Bridge lists
+    campaign_ids = []
+    objective_ids = []
+
+    # Helper function
+    def add_link(campaign_id, campaign_created_at, objective_name):
+
+        obj_id = obj_id_map.get(objective_name)
+        obj_date = obj_date_map.get(objective_name)
+
+        if (
+            obj_id is not None
+            and obj_date is not None
+            and obj_date <= campaign_created_at
+        ):
+            campaign_ids.append(campaign_id)
+            objective_ids.append(obj_id)
+
+    # Campaign → Objective Mapping
     for _, row in campaign_df.iterrows():
 
         campaign_id = row['Campaign_ID']
@@ -63,9 +107,9 @@ def create_campaign_objective_bridge():
 
         # Customer acquisition campaigns
         if campaign_name in [
-            'Summer Mattress Sale',
-            'Mid-Year Mega Discount',
-            '11.11 Mega Sale',
+            'Summer Mattress Upgrade',
+            'Mid-Year Home Refresh',
+            '11.11',
             'New Year Bedroom Refresh'
         ]:
 
@@ -77,8 +121,8 @@ def create_campaign_objective_bridge():
 
         # Bundle / cross-sell campaigns
         elif campaign_name in [
-            'Valentine Bedding Bundle',
-            'Holiday Bundle Promotion',
+            'Valentine Sleep & Comfort',
+            'Holiday Home Comfort',
             'Back to School Home Essentials'
         ]:
 
@@ -90,8 +134,8 @@ def create_campaign_objective_bridge():
 
         # Retention-focused campaigns
         elif campaign_name in [
-            'Free Shipping Month',
-            'Rainy Season Bedding Deals'
+            'Free Shipping Festival',
+            'Rainy Season Comfort'
         ]:
 
             add_link(
@@ -103,7 +147,7 @@ def create_campaign_objective_bridge():
         # Awareness / category expansion campaigns
         elif campaign_name in [
             'Happy Songkran',
-            'Sleep Better Campaign'
+            'Sleep Better'
         ]:
 
             add_link(
@@ -113,7 +157,7 @@ def create_campaign_objective_bridge():
             )
 
         # Flash sale campaigns
-        elif campaign_name == '10.10 Flash Sale':
+        elif campaign_name == '10.10':
 
             add_link(
                 campaign_id,

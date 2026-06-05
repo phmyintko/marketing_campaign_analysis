@@ -7,6 +7,7 @@ This project simulates realistic synthetic campaign data for analytics practice,
 ---
 
 ### Core Features
+* **Campaign Timeline Logic:** Connects the timeline directly to common corporate logic, where senior executives approve the annual marketing plan all at once on **January 1st** of each fiscal year.
 * **Data Source:** Modeled in alignment with the **Thailand Consumer Spending Index** via `tradingeconomics.com`.
 * **Seasonality:** Campaign Budget allocations are strictly weighted by `2025` quarterly data spikes ($Q2 > Q4 > Q3 > Q1).
 * **Campaign Timeline:** Designed to cover Payday, local festivals and evnets. Moreover set a week gap between campaign to protect teams burn out.

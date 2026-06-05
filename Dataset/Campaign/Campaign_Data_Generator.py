@@ -27,7 +27,8 @@ def create_campaign_data():
         'Holiday Bundle Promotion'
     ]
     Campaign_Names = []
-    Campaign_Type = []
+    #Move Campaign_Type to Promotion Entity
+    #Campaign_Type = []
     Start_Date = []
     End_Date = []
     Budget = []
@@ -38,10 +39,10 @@ def create_campaign_data():
 
     year_list = [2020, 2021, 2022, 2023, 2024, 2025]
 
-    # LOOP 1 for year
+    # Loop 1 for year
     for year in year_list:
         
-        # LOOP 2 for assigned list
+        # Loop 2 for assigned list
         for name in Campaign_Name_List:
             
             # campaign timeline are set strategically to cover festivals and national events.
@@ -50,62 +51,76 @@ def create_campaign_data():
                 start = datetime.date(year + 1, 1, 24)
                 end = datetime.date(year + 1, 2, 17)
                 budg = 33000
+                # Whole year campaign are designed and approved by senior management
+                #SN:apply in Promotion entity's Created_At field/ created = datetime.date(year + 1, 1, 1)
                 created = datetime.date(year + 1, 1, 1)
             elif name == 'Summer Mattress Sale':
                 start = datetime.date(year + 1, 2, 24)
                 end = datetime.date(year + 1, 3, 17)
                 budg = 33000
-                created = datetime.date(year + 1, 2, 1)
+                #SN:created = datetime.date(year + 1, 2, 1)
+                created = datetime.date(year + 1, 1, 1)
             elif name == 'Happy Songkran':
                 start = datetime.date(year + 1, 3, 24)
                 end = datetime.date(year + 1, 4, 17)
                 budg = 33000
-                created = datetime.date(year + 1, 3, 1)
+                #SN:created = datetime.date(year + 1, 3, 1)
+                created = datetime.date(year + 1, 1, 1)
             elif name == 'Mid-Year Mega Discount':
                 start = datetime.date(year + 1, 4, 24)
                 end = datetime.date(year + 1, 5, 17)
                 budg = 33000
-                created = datetime.date(year + 1, 4, 1)
+                #SN:created = datetime.date(year + 1, 4, 1)
+                created = datetime.date(year + 1, 1, 1)
             elif name == 'Free Shipping Month':
                 start = datetime.date(year + 1, 5, 24)
                 end = datetime.date(year + 1, 6, 17)
                 budg = 66000
-                created = datetime.date(year + 1, 5, 1)
+                #SN:created = datetime.date(year + 1, 5, 1)
+                created = datetime.date(year + 1, 1, 1)
             elif name == 'Rainy Season Bedding Deals':
                 start = datetime.date(year + 1, 6, 24)
                 end = datetime.date(year + 1, 7, 17)
                 budg = 66000
-                created = datetime.date(year + 1, 6, 1)
+                #SN:created = datetime.date(year + 1, 6, 1)
+                created = datetime.date(year + 1, 1, 1)
             elif name == 'Sleep Better Campaign':
                 start = datetime.date(year + 1, 7, 24)
                 end = datetime.date(year + 1, 8, 17)
                 budg = 66000
-                created = datetime.date(year + 1, 7, 1)
+                #SN:created = datetime.date(year + 1, 7, 1)
+                created = datetime.date(year + 1, 1, 1)
             elif name == 'Back to School Home Essentials':
                 start = datetime.date(year + 1, 8, 24)
                 end = datetime.date(year + 1, 9, 17)
                 budg = 66000
-                created = datetime.date(year + 1, 8, 1)
+                #SN:created = datetime.date(year + 1, 8, 1)
+                created = datetime.date(year + 1, 1, 1)
             elif name == '10.10 Flash Sale':
                 start = datetime.date(year + 1, 9, 24)
                 end = datetime.date(year + 1, 10, 17)
                 budg = 49000
-                created = datetime.date(year + 1, 9, 1)
+                #SN:created = datetime.date(year + 1, 9, 1)
+                created = datetime.date(year + 1, 1, 1)
             elif name == '11.11 Mega Sale':
                 start = datetime.date(year + 1, 10, 24)
                 end = datetime.date(year + 1, 11, 17)
                 budg = 49000
-                created = datetime.date(year + 1, 10, 1)
+                #SN:created = datetime.date(year + 1, 10, 1)
+                created = datetime.date(year + 1, 1, 1)
             elif name == 'Holiday Bundle Promotion':
                 start = datetime.date(year + 1, 11, 24)
                 end = datetime.date(year + 1, 12, 17)
                 budg = 49000
-                created = datetime.date(year + 1, 11, 1)
+                #SN:created = datetime.date(year + 1, 11, 1)
+                created = datetime.date(year + 1, 1, 1)
+            # year +2 to solve time travel bug
             elif name == 'New Year Bedroom Refresh':
                 start = datetime.date(year + 1, 12, 24)
                 end = datetime.date(year + 2, 1, 17)
                 budg = 49000
-                created = datetime.date(year + 1, 12, 1)
+                #SN:created = datetime.date(year + 1, 12, 1)
+                created = datetime.date(year + 1, 1, 1)
 
             # Stop generating after May 2026
             if start > datetime.date(2026, 5, 31):
@@ -120,19 +135,21 @@ def create_campaign_data():
             prefix = "CMP_"
             Campaign_ID.append(prefix + fake.unique.uuid4())
 
-            # Assign Campaign Types
-            if name in ['New Year Bedroom Refresh', 'Summer Mattress Sale', '11.11 Mega Sale']:
-                Campaign_Type.append('Percentage Discount')
-            elif name in ['Back to School Home Essentials']:
-                Campaign_Type.append('Fixed Discount')
-            elif name in ['Valentine Bedding Bundle', 'Holiday Bundle Promotion']:
-                Campaign_Type.append('Buy One Get One')
-            elif name in ['Happy Songkran', 'Free Shipping Month']:
-                Campaign_Type.append('Free Shipping')
-            elif name == '10.10 Flash Sale':
-                Campaign_Type.append('Limited Time Offer')
-            else:
-                Campaign_Type.append('Voucher Code')
+            #Move Campaign_Type to Promotion Entity
+            #Assign Campaign Types
+            #if name in ['New Year Bedroom Refresh', 'Summer Mattress Sale', '11.11 Mega Sale']:
+                #Campaign_Type.append('Percentage Discount')
+            #elif name in ['Back to School Home Essentials']:
+                #Campaign_Type.append('Fixed Discount')
+            #elif name in ['Valentine Bedding Bundle', 'Holiday Bundle Promotion']:
+                #Campaign_Type.append('Buy One Get One')
+            #elif name in ['Happy Songkran', 'Free Shipping Month']:
+                #Campaign_Type.append('Free Shipping')
+            #elif name == '10.10 Flash Sale':
+                #Campaign_Type.append('Limited Time Offer')
+            #else:
+                # Mid_Year Mega Discount, Rainy Season Bedding Deals, Sleep Better Campaign
+                #Campaign_Type.append('Voucher Code')
 
             # Assign Target Audiences
             if name in ['New Year Bedroom Refresh', 'Happy Songkran', '11.11 Mega Sale', 'Sleep Better Campaign']:
@@ -166,7 +183,8 @@ def create_campaign_data():
     data = pd.DataFrame({
         'Campaign_ID': Campaign_ID,
         'Campaign_Name': Campaign_Names,
-        'Campaign_Type': Campaign_Type,
+        #Move Campaign_Type to Promotion Entity
+        #'Campaign_Type': Campaign_Type,
         'Start_Date': Start_Date,
         'End_Date': End_Date,
         'Budget': Budget,

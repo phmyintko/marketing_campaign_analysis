@@ -37,7 +37,7 @@ def create_campaign_data():
     Status = []
     Created_At = []
 
-    year_list = [2020, 2021, 2022, 2023, 2024, 2025]
+    year_list = [2020, 2021, 2022, 2023, 2024, 2025, 2026]
 
     # Loop 1 for year
     for year in year_list:

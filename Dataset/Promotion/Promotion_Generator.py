@@ -1,13 +1,10 @@
 from faker import Faker
 import pandas as pd
-import random
-import datetime
 
 #pandas build
 def promotion_data_generator():
     fake = Faker('en_TH')
     SEED = 92
-    random.seed(SEED)
     fake.seed_instance(SEED)
 
     #load Campaign Data

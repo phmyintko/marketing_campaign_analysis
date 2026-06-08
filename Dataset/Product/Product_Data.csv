@@ -1,0 +1,91 @@
+Product_ID,Product_Name,Sub_Category_ID,Size,Weight_lbs,Color,Price,Manufacturer_ID,Created_At
+MatFoa_8cd2,Foam Mattress Color Single,SUBCAT_8cd2,Single,40.0,Color,3500.0,MFG_8cd2,2021-01-01
+MatFoa_4414,Foam Mattress Pattern Single,SUBCAT_8cd2,Single,40.0,Pattern,3500.0,MFG_8cd2,2021-01-01
+MatFoa_e09a,Foam Mattress Color Queen,SUBCAT_8cd2,Queen,60.0,Color,5500.0,MFG_8cd2,2021-01-01
+MatFoa_182e,Foam Mattress Pattern Queen,SUBCAT_8cd2,Queen,60.0,Pattern,5500.0,MFG_8cd2,2021-01-01
+MatFoa_28ad,Foam Mattress Color King,SUBCAT_8cd2,King,70.0,Color,7500.0,MFG_8cd2,2021-01-01
+MatFoa_13fa,Foam Mattress Pattern King,SUBCAT_8cd2,King,70.0,Pattern,7500.0,MFG_8cd2,2021-01-01
+MatSpr_56a3,Spring Mattress Color Single,SUBCAT_4414,Single,50.0,Color,4000.0,MFG_8cd2,2021-01-01
+MatSpr_06ac,Spring Mattress Pattern Single,SUBCAT_4414,Single,50.0,Pattern,4000.0,MFG_8cd2,2021-01-01
+MatSpr_ccc4,Spring Mattress Color Queen,SUBCAT_4414,Queen,80.0,Color,6000.0,MFG_8cd2,2021-01-01
+MatSpr_28ce,Spring Mattress Pattern Queen,SUBCAT_4414,Queen,80.0,Pattern,6000.0,MFG_8cd2,2021-01-01
+MatSpr_ba3a,Spring Mattress Color King,SUBCAT_4414,King,90.0,Color,8000.0,MFG_8cd2,2021-01-01
+MatSpr_acd0,Spring Mattress Pattern King,SUBCAT_4414,King,90.0,Pattern,8000.0,MFG_8cd2,2021-01-01
+MatPoc_1e64,Pocket Spring Mattress Color Single,SUBCAT_e09a,Single,80.0,Color,8500.0,MFG_8cd2,2021-01-01
+MatPoc_27a0,Pocket Spring Mattress Pattern Single,SUBCAT_e09a,Single,80.0,Pattern,8500.0,MFG_8cd2,2021-01-01
+MatPoc_6ee7,Pocket Spring Mattress Color Queen,SUBCAT_e09a,Queen,100.0,Color,13000.0,MFG_8cd2,2021-01-01
+MatPoc_45de,Pocket Spring Mattress Pattern Queen,SUBCAT_e09a,Queen,100.0,Pattern,13000.0,MFG_8cd2,2021-01-01
+MatPoc_2df5,Pocket Spring Mattress Color King,SUBCAT_e09a,King,110.0,Color,17500.0,MFG_8cd2,2021-01-01
+MatPoc_f6cb,Pocket Spring Mattress Pattern King,SUBCAT_e09a,King,110.0,Pattern,17500.0,MFG_8cd2,2021-01-01
+BedCot_2449,Cotton Bedsheet Color Single,SUBCAT_182e,Single,2.0,Color,800.0,MFG_ba3a,2021-01-01
+BedCot_6141,Cotton Bedsheet Pattern Single,SUBCAT_182e,Single,2.0,Pattern,800.0,MFG_ba3a,2021-01-01
+BedCot_4a29,Cotton Bedsheet Graphic Single,SUBCAT_182e,Single,2.0,Graphic,800.0,MFG_ba3a,2021-01-01
+BedCot_c645,Cotton Bedsheet Color Queen,SUBCAT_182e,Queen,3.0,Color,1200.0,MFG_ba3a,2021-01-01
+BedCot_d278,Cotton Bedsheet Pattern Queen,SUBCAT_182e,Queen,3.0,Pattern,1200.0,MFG_ba3a,2021-01-01
+BedCot_87ca,Cotton Bedsheet Graphic Queen,SUBCAT_182e,Queen,3.0,Graphic,1200.0,MFG_ba3a,2021-01-01
+BedCot_2397,Cotton Bedsheet Color King,SUBCAT_182e,King,4.0,Color,1500.0,MFG_ba3a,2021-01-01
+BedCot_4e8b,Cotton Bedsheet Pattern King,SUBCAT_182e,King,4.0,Pattern,1500.0,MFG_ba3a,2021-01-01
+BedCot_17f5,Cotton Bedsheet Graphic King,SUBCAT_182e,King,4.0,Graphic,1500.0,MFG_ba3a,2021-01-01
+BedPol_e8c9,Polyester Bedsheet Color Single,SUBCAT_28ad,Single,1.5,Color,400.0,MFG_ba3a,2021-01-01
+BedPol_2724,Polyester Bedsheet Pattern Single,SUBCAT_28ad,Single,1.5,Pattern,400.0,MFG_ba3a,2021-01-01
+BedPol_e207,Polyester Bedsheet Graphic Single,SUBCAT_28ad,Single,1.5,Graphic,400.0,MFG_ba3a,2021-01-01
+BedPol_3807,Polyester Bedsheet Color Queen,SUBCAT_28ad,Queen,2.2,Color,500.0,MFG_ba3a,2021-01-01
+BedPol_f406,Polyester Bedsheet Pattern Queen,SUBCAT_28ad,Queen,2.2,Pattern,500.0,MFG_ba3a,2021-01-01
+BedPol_d3de,Polyester Bedsheet Graphic Queen,SUBCAT_28ad,Queen,2.2,Graphic,500.0,MFG_ba3a,2021-01-01
+BedPol_5144,Polyester Bedsheet Color King,SUBCAT_28ad,King,3.0,Color,600.0,MFG_ba3a,2021-01-01
+BedPol_239e,Polyester Bedsheet Pattern King,SUBCAT_28ad,King,3.0,Pattern,600.0,MFG_ba3a,2021-01-01
+BedPol_5ab8,Polyester Bedsheet Graphic King,SUBCAT_28ad,King,3.0,Graphic,600.0,MFG_ba3a,2021-01-01
+BedLin_18f8,Linen Bedsheet Color Single,SUBCAT_13fa,Single,2.5,Color,2000.0,MFG_ba3a,2021-01-01
+BedLin_2f24,Linen Bedsheet Pattern Single,SUBCAT_13fa,Single,2.5,Pattern,2000.0,MFG_ba3a,2021-01-01
+BedLin_d846,Linen Bedsheet Graphic Single,SUBCAT_13fa,Single,2.5,Graphic,2000.0,MFG_ba3a,2021-01-01
+BedLin_8a26,Linen Bedsheet Color Queen,SUBCAT_13fa,Queen,3.5,Color,3800.0,MFG_ba3a,2021-01-01
+BedLin_b097,Linen Bedsheet Pattern Queen,SUBCAT_13fa,Queen,3.5,Pattern,3800.0,MFG_ba3a,2021-01-01
+BedLin_67d1,Linen Bedsheet Graphic Queen,SUBCAT_13fa,Queen,3.5,Graphic,3800.0,MFG_ba3a,2021-01-01
+BedLin_aa0f,Linen Bedsheet Color King,SUBCAT_13fa,King,4.5,Color,4200.0,MFG_ba3a,2021-01-01
+BedLin_5d3d,Linen Bedsheet Pattern King,SUBCAT_13fa,King,4.5,Pattern,4200.0,MFG_ba3a,2021-01-01
+BedLin_f732,Linen Bedsheet Graphic King,SUBCAT_13fa,King,4.5,Graphic,4200.0,MFG_ba3a,2021-01-01
+PilCot_3481,Cotton Pillow Color One Size,SUBCAT_56a3,One Size,0.3,Color,250.0,MFG_ba3a,2024-01-01
+PilCot_f078,Cotton Pillow Pattern One Size,SUBCAT_56a3,One Size,0.3,Pattern,250.0,MFG_ba3a,2024-01-01
+PilCot_b22a,Cotton Pillow Graphic One Size,SUBCAT_56a3,One Size,0.3,Graphic,250.0,MFG_ba3a,2024-01-01
+PilFea_8a5d,Feather Pillow Color One Size,SUBCAT_06ac,One Size,0.4,Color,650.0,MFG_ba3a,2024-01-01
+PilFea_115c,Feather Pillow Pattern One Size,SUBCAT_06ac,One Size,0.4,Pattern,650.0,MFG_ba3a,2024-01-01
+PilFea_56ac,Feather Pillow Graphic One Size,SUBCAT_06ac,One Size,0.4,Graphic,650.0,MFG_ba3a,2024-01-01
+PilPol_3076,Polyester Pillow Color One Size,SUBCAT_ccc4,One Size,0.2,Color,180.0,MFG_ba3a,2024-01-01
+PilPol_662f,Polyester Pillow Pattern One Size,SUBCAT_ccc4,One Size,0.2,Pattern,180.0,MFG_ba3a,2024-01-01
+PilPol_a442,Polyester Pillow Graphic One Size,SUBCAT_ccc4,One Size,0.2,Graphic,180.0,MFG_ba3a,2024-01-01
+BolCot_3050,Cotton Bolster Color One Size,SUBCAT_28ce,One Size,0.4,Color,300.0,MFG_ba3a,2024-01-01
+BolCot_31e6,Cotton Bolster Pattern One Size,SUBCAT_28ce,One Size,0.4,Pattern,300.0,MFG_ba3a,2024-01-01
+BolCot_21df,Cotton Bolster Graphic One Size,SUBCAT_28ce,One Size,0.4,Graphic,300.0,MFG_ba3a,2024-01-01
+BolFea_98d4,Feather Bolster Color One Size,SUBCAT_ba3a,One Size,0.5,Color,700.0,MFG_ba3a,2024-01-01
+BolFea_d1d6,Feather Bolster Pattern One Size,SUBCAT_ba3a,One Size,0.5,Pattern,700.0,MFG_ba3a,2024-01-01
+BolFea_b87f,Feather Bolster Graphic One Size,SUBCAT_ba3a,One Size,0.5,Graphic,700.0,MFG_ba3a,2024-01-01
+BolPol_f3ad,Polyester Bolster Color One Size,SUBCAT_acd0,One Size,0.3,Color,220.0,MFG_ba3a,2024-01-01
+BolPol_cfd7,Polyester Bolster Pattern One Size,SUBCAT_acd0,One Size,0.3,Pattern,220.0,MFG_ba3a,2024-01-01
+BolPol_82d7,Polyester Bolster Graphic One Size,SUBCAT_acd0,One Size,0.3,Graphic,220.0,MFG_ba3a,2024-01-01
+BlaCot_9ebb,Cotton Blanket Color Single,SUBCAT_1e64,Single,2.5,Color,1200.0,MFG_ba3a,2024-01-01
+BlaCot_9781,Cotton Blanket Pattern Single,SUBCAT_1e64,Single,2.5,Pattern,1200.0,MFG_ba3a,2024-01-01
+BlaCot_8a14,Cotton Blanket Graphic Single,SUBCAT_1e64,Single,2.5,Graphic,1200.0,MFG_ba3a,2024-01-01
+BlaCot_503c,Cotton Blanket Color Queen,SUBCAT_1e64,Queen,3.5,Color,2000.0,MFG_ba3a,2024-01-01
+BlaCot_ce6c,Cotton Blanket Pattern Queen,SUBCAT_1e64,Queen,3.5,Pattern,2000.0,MFG_ba3a,2024-01-01
+BlaCot_b529,Cotton Blanket Graphic Queen,SUBCAT_1e64,Queen,3.5,Graphic,2000.0,MFG_ba3a,2024-01-01
+BlaCot_572e,Cotton Blanket Color King,SUBCAT_1e64,King,4.5,Color,2200.0,MFG_ba3a,2024-01-01
+BlaCot_9ef6,Cotton Blanket Pattern King,SUBCAT_1e64,King,4.5,Pattern,2200.0,MFG_ba3a,2024-01-01
+BlaCot_6c4b,Cotton Blanket Graphic King,SUBCAT_1e64,King,4.5,Graphic,2200.0,MFG_ba3a,2024-01-01
+BlaFla_769a,Flannel Blanket Color Single,SUBCAT_27a0,Single,3.0,Color,600.0,MFG_ba3a,2024-01-01
+BlaFla_ce8e,Flannel Blanket Pattern Single,SUBCAT_27a0,Single,3.0,Pattern,600.0,MFG_ba3a,2024-01-01
+BlaFla_4110,Flannel Blanket Graphic Single,SUBCAT_27a0,Single,3.0,Graphic,600.0,MFG_ba3a,2024-01-01
+BlaFla_f995,Flannel Blanket Color Queen,SUBCAT_27a0,Queen,4.0,Color,1000.0,MFG_ba3a,2024-01-01
+BlaFla_1d9c,Flannel Blanket Pattern Queen,SUBCAT_27a0,Queen,4.0,Pattern,1000.0,MFG_ba3a,2024-01-01
+BlaFla_78f1,Flannel Blanket Graphic Queen,SUBCAT_27a0,Queen,4.0,Graphic,1000.0,MFG_ba3a,2024-01-01
+BlaFla_7645,Flannel Blanket Color King,SUBCAT_27a0,King,5.0,Color,1200.0,MFG_ba3a,2024-01-01
+BlaFla_ad01,Flannel Blanket Pattern King,SUBCAT_27a0,King,5.0,Pattern,1200.0,MFG_ba3a,2024-01-01
+BlaFla_5f55,Flannel Blanket Graphic King,SUBCAT_27a0,King,5.0,Graphic,1200.0,MFG_ba3a,2024-01-01
+BlaFle_991d,Fleece Blanket Color Single,SUBCAT_6ee7,Single,2.0,Color,300.0,MFG_ba3a,2024-01-01
+BlaFle_1485,Fleece Blanket Pattern Single,SUBCAT_6ee7,Single,2.0,Pattern,300.0,MFG_ba3a,2024-01-01
+BlaFle_0f50,Fleece Blanket Graphic Single,SUBCAT_6ee7,Single,2.0,Graphic,300.0,MFG_ba3a,2024-01-01
+BlaFle_c9a0,Fleece Blanket Color Queen,SUBCAT_6ee7,Queen,2.8,Color,600.0,MFG_ba3a,2024-01-01
+BlaFle_394c,Fleece Blanket Pattern Queen,SUBCAT_6ee7,Queen,2.8,Pattern,600.0,MFG_ba3a,2024-01-01
+BlaFle_7daf,Fleece Blanket Graphic Queen,SUBCAT_6ee7,Queen,2.8,Graphic,600.0,MFG_ba3a,2024-01-01
+BlaFle_5881,Fleece Blanket Color King,SUBCAT_6ee7,King,3.5,Color,700.0,MFG_ba3a,2024-01-01
+BlaFle_33f0,Fleece Blanket Pattern King,SUBCAT_6ee7,King,3.5,Pattern,700.0,MFG_ba3a,2024-01-01
+BlaFle_9bda,Fleece Blanket Graphic King,SUBCAT_6ee7,King,3.5,Graphic,700.0,MFG_ba3a,2024-01-01

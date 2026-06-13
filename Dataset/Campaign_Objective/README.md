@@ -9,13 +9,3 @@ This project simulates realistic synthetic Campaign and Objective bridge table f
 * **Timeline Safety Guard:** Keeps dates historically logical. Since company goals change and grow over time, the code makes sure a campaign can never connect to a corporate goal that didn't exist yet when the campaign went live.
 
 ---
-
-### Entity Relationship
-
-```text
-
-Product Category
-
-       │
-
-       └───< Product Sub Category

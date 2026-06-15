@@ -18,6 +18,11 @@ The synthetic dataset simulates the growth lifecycle of a Thai home goods retail
 | 2026 | Marketing Optimization Stage | Multi-channel attribution analysis & targeting refinement expanded | Improve campaign effectiveness & increase revenue |
 
 
+
+Customer acquisition trends were assigned by using Thailand’s GDP growth. Higher growth years generally reflect stronger consumer demand and business confidence, allowing companies to invest more in marketing and customer acquisition. Lower growth years were assigned lower signup probabilities to simulate a more challenging business environment.
+
+
+
 ---
 
 ## Future Architecture & Excluded Domains

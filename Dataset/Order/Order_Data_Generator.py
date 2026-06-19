@@ -102,6 +102,7 @@ def order_data_generator():
             order_records.append({
                 'Order_ID': 'ORD_' + fake.unique.uuid4()[:6],
                 'Customer_ID': customer_id,
+                'Customer_Type': customer_type, #in order to create quantity logic in order_items entity
                 'Order_Date': order_date,
                 'Payment_ID': payment_id,
                 'Status_ID': status_id,
